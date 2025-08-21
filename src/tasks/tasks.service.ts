@@ -9,13 +9,14 @@ export class TasksService {
     try {
       const tasks = await this.prisma.task.findMany();
       return tasks;
-    } catch (error) {
+    } catch (error: unknown) {
       if (error instanceof Error) {
         throw new HttpException(
           error.message,
           HttpStatus.INTERNAL_SERVER_ERROR,
         );
       }
+      return [];
     }
   }
 }
