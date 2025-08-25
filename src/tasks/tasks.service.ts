@@ -103,3 +103,12 @@ export class TasksService {
     }
   }
 }
+//--------------------------------------------------------------------------------------------------------------------------------------------------
+// SERVICE:
+// Contiene la lógica de negocio.
+// Es donde realmente se hacen las cosas:
+//    - Consultar la base de datos con Prisma.
+//    - Aplicar reglas de negocio (ejemplo: verificar que un email no esté repetido antes de crear un usuario).
+//    - Por lo anterior es que aca se importan los DTOs (Data Transfer Objects).
+//    - Manejar operaciones complejas.
+// El service no sabe nada de HTTP (no sabe si los datos vienen de un formulario, API REST, GraphQL, etc.). Solo sabe manejar reglas y lógica.

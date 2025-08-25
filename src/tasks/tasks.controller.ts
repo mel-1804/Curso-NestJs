@@ -56,3 +56,12 @@ export class TasksController {
     return await this.tasksServices.deleteTask(id);
   }
 }
+//-------------------------------------------------------------------------------------------------------------
+// CONTROLLER:
+// Es la puerta de entrada de la aplicación.
+// Recibe las peticiones HTTP (GET, POST, PATCH, DELETE, etc.) desde el cliente.
+// Su trabajo es muy ligero:
+// Tomar los datos (query, body, params).
+// Pasarlos al SERVICE.
+// Devolver la respuesta al cliente.
+// Un controller NO debe contener lógica de negocio. Solo se encarga de dirigir el tráfico.
